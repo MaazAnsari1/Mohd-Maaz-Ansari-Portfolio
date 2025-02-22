@@ -1,0 +1,11 @@
+.typewriter-container {
+    display: flex;
+    align-items: center;
+
+    .typewriter-txt {
+        margin: 0;
+        font-size: 1.3vw;
+        font-weight: 200;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+}

@@ -1,0 +1,54 @@
+.vision-wrap {
+    border: 1px solid #000;
+    margin: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .vision-body {
+        margin: 0 4vw;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vw;
+        align-items: center;
+
+        .vision-slogan {
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            h1 {
+                margin: 0;
+                font-size: 2.5vw;
+                font-weight: 600;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            }
+
+            .vision-txt-wrap {
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: column;
+                row-gap: 1px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    margin: 0;
+                    font-size: 1.3vw;
+                    font-weight: 400;
+                    color: #656464;
+                }
+            }
+        }
+
+        .vision-call-btn {
+            border: 1px solid red;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.rotating-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: rotateContainer 8s linear infinite;
+
+  a {
+      display: flex;
+      text-decoration: none;
+
+      span {
+        position: absolute; // Position each letter
+        top: 0;
+        right: 40;
+        transform-origin: 0 50px; // Rotate around a circular center
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 10px;
+        text-transform: capitalize;
+        color: #656464;
+        transition: all 0.8s ease;
+      }
+    }
+}
+
+.rotating-container:hover {
+  animation-play-state: paused;
+}
+
+.rotating-container:hover span {
+  color: #000;
+}
+
+@keyframes rotateContainer {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 

@@ -1,0 +1,130 @@
+.service-sec {
+    border: 1px solid #000;
+    margin: 4vw;
+    display: flex;
+
+    .service-wrap {
+        border: 1px solid red;
+        margin: 0 4vw;
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vw;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .service-head {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+            text-align: center;
+            width: 100%;
+
+            h2 {
+                margin: 0;
+                font-size: 2.5vw;
+                font-weight: 600;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.3vw;
+                font-weight: 400;
+                color: #656464;
+            }
+        }
+
+        .service-content {
+            border: 1px solid orange;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            column-gap: 2%;
+            row-gap: 1.7vw;
+
+            .service-body {
+                border: 1px solid #000;
+                cursor: pointer;
+                position: relative;
+                border-radius: 1.3vw;
+                display: flex;
+                flex-direction: column;
+                row-gap: 1vw;
+                padding: 1.7vw;
+                background-color: #f8f8f8;
+                box-shadow: 0 4px 15px 0 rgba(107, 107, 107, 0.37);
+                transition: all 0.8s ease;
+
+                // .service-icon {
+                //     position: absolute;
+                //     height: 70px;
+                //     width: 70px;
+                //     // top: -60px;
+                //     // left: 8%;
+                //     top: -50%;
+                //     left: 50%;
+                //     transform: translate(-50%, 50%);
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     background-color: #f8f8f8;
+                //     padding: 15px;
+                //     border: 1px solid #000;
+                //     border-radius: 50%;
+                //     box-shadow: 0 0px 0px 10px #fff;
+
+                //     img {
+                //         height: 60px;
+                //         width: 60px;
+                //     }
+                // }
+
+                h3 {
+                    margin: 0;
+                    font-size: 1.7vw;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 1.3vw;
+                    font-weight: 400;
+                    color: #656464;
+                }
+            }
+
+            .service-body:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px){
+    .service-sec {
+        .service-wrap {
+            .service-content {
+                grid-template-columns: 48% 48%;
+                column-gap: 4%;
+                row-gap: 3vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .service-sec {
+        .service-wrap {
+            .service-content {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 3vw;
+            }
+        }
+    }
+}

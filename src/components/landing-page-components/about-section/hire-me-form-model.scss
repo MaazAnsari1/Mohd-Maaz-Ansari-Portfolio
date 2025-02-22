@@ -1,0 +1,151 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .modal {
+        position: relative;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        .close-modal {
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            background-color: red;
+            color: #fff;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            opacity: 70%;
+            transition: all 0.8s ease;
+        }
+
+        :hover,
+        :focus,
+        :active {
+            opacity: 100%;
+        }
+
+        .model-head {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                margin: 0;
+                font-size: 2.5vw;
+                font-weight: 600;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                color: #000;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.3vw;
+                font-weight: 400;
+                color: #656464;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            justify-content: center;
+
+            .field-wrap {
+                position: relative;
+                display: flex;
+                width: 100%;
+                
+                .Full-name,
+                .email,
+                .phone-num {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 1vw;
+                    font-weight: 400;
+                }
+
+                .txt-area {
+                    width: 100%;
+                    padding: 1vw;
+                    height: 100px;
+                    font-size: 1vw;
+                    font-weight: 400;
+                    overflow-y: scroll;
+                    scroll-behavior: smooth;
+                }
+
+                .error {
+                    position: absolute;
+                    top: 45px;
+                    margin: 0px 10px;
+                    color: red;
+                    font-size: 0.9vw;
+                }
+
+                .hire-me-btn-wrap {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    column-gap: 20px;
+
+                    .reset-btn {
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 25px;
+                        padding: 1vw;
+                        background-color: #cdcbcb;
+                        color: #fff;
+                        font-size: 1.3vw;
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+
+                    .submit-btn {
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 25px;
+                        padding: 1vw;
+                        background-color: MediumSeaGreen;
+                        color: #fff;
+                        font-size: 1.3vw;
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+    
+                    :hover,
+                    :focus,
+                    :active {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

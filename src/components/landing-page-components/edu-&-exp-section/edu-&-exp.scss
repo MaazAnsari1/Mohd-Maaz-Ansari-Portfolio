@@ -1,0 +1,197 @@
+.edu-exp-sec {
+    border: 1px solid #000;
+    display: flex;
+    margin: 4vw;
+    
+    .edu-exp-wrap {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        margin: 0 4vw;
+        padding: 3vw;
+        border-radius: 25px;
+        background: radial-gradient(circle, #c08ec344, #c38e8e44, #bec38e44, #c38e8e44);
+        
+        .edu-wrap {
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            row-gap: 4vw;
+            justify-content: center;
+        
+            .edu-head-wrap {
+                border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                row-gap: 1vw;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+        
+                p {
+                    margin: 0;
+                    font-size: 1.5vw;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                }
+        
+                h1 {
+                    margin: 0;
+                    font-size: 2.5vw;
+                    font-weight: 600;
+                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                }
+            }
+        
+            .edu-content {
+                border: 1px solid red;
+                cursor: pointer;
+                display: grid;
+                grid-template-columns: 32% 32% 32%;
+                column-gap: 2%;
+                row-gap: 2vw;
+                
+                .edu-txt-wrap {
+                    position: relative;
+                    background: rgba(255, 255, 255, 0.273);
+                    border: 1px solid rgba(255, 255, 255, 0.221);
+                    box-shadow: 0 4px 15px 0 rgba(107, 107, 107, 0.37);
+                    padding: 1.7vw;
+                    border-radius: 1.3vw;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 2px;
+                    transition: transform 500ms ease-out;
+                    overflow: hidden;
+
+                    &::before {
+                        content: '';
+                        background: rgba(#fff, 0.4);
+                        width: 60%;
+                        height: 100%;
+                        top: 0%;
+
+                        transform: skew(45deg);
+                        position: absolute;
+
+                        transition: left 500ms ease-out;
+
+                        left: -125%;
+                    }
+
+                    &:hover {
+                        &::before {
+                            left: 150%;
+                        }
+                    }
+        
+                    .course-wrap {
+                        display: flex;
+                        flex-direction: row;
+                        column-gap: 1vw;
+                        border-bottom: 1px solid #656464;
+        
+                        h2 {
+                            margin: 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            height: 5vw;
+                            font-size: 1.7vw;
+                            font-weight: 600;
+                            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                            text-transform: uppercase;
+                        }
+                    }
+        
+                    .college-wrap {
+                        // border: 1px solid blue;
+                        display: flex;
+                        margin: 1vw 0 0;
+    
+                        a {
+                            text-decoration: none;
+    
+                            h3 {
+                                margin: 0;
+                                display: flex;
+                                flex-wrap: wrap;
+                                font-size: 1.7vw;
+                                font-weight: 400;
+                                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                                text-transform: uppercase;
+                                color: #656464;
+                            }
+    
+                            :hover {
+                                color: #4b0082;
+                            }
+                        }
+                    }
+        
+                    .year-wrap {
+                        // border: 1px solid blueviolet;
+                        display: flex;
+        
+                        p {
+                            margin: 0;
+                            font-size: 1.3vw;
+                            font-weight: 400;
+                            font-style: italic;
+                            text-transform: uppercase;
+                            color: #656464;
+                        }
+                    }
+        
+                    .edu-summary-wrap {
+                        // border: 1px solid grey;
+                        display: flex;
+        
+                        p {
+                            margin: 0;
+                            display: flex;
+                            flex-wrap: wrap;
+                            font-size: 1.3vw;
+                            font-weight: 400;
+                            font-style: italic;
+                            color: #656464;
+                        }
+                    }
+                }
+
+                .edu-txt-wrap:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px){
+    .edu-exp-sec {
+        .edu-exp-wrap {
+            .edu-wrap {
+                .edu-content {
+                    grid-template-columns: 48% 48%;
+                    column-gap: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .edu-exp-sec {
+        .edu-exp-wrap {
+            .edu-wrap {
+                .edu-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 1.3vw;
+                }
+            }
+        }
+    }
+}

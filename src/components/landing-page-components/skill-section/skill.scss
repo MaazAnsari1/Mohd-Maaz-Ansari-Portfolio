@@ -1,0 +1,170 @@
+.skill-sec {
+    border: 1px solid #000;
+    margin: 4vw;
+    display: flex;
+
+    .skill-wrap {
+        border: 1px solid green;
+        margin: 0 4vw;
+        display: grid;
+        grid-template-columns: 48% 50%;
+        column-gap: 2%;
+        width: 100%;
+        border-radius: 2vw;
+
+        .skill-content {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5vw;
+            padding: 3vw;
+            border-radius: 2vw 0 0 2vw;
+
+            .skill-head {
+                border: 1px solid orangered;
+                display: flex;
+                flex-direction: row;
+                column-gap: 1.3vw;
+                align-items: center;
+
+                span {
+                    background-color: #000;
+                    height: 10%;
+                    width: 1.7vw;
+                }
+
+                p {
+                    border: 1px solid yellow;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 2.5vw;
+                    font-weight: 600;
+                    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                }
+            }
+
+            .skill-body {
+                border: 1px solid yellow;
+                display: grid;
+                grid-template-columns: 48% 48%;
+                column-gap: 4%;
+                row-gap: 1.7vw;
+                
+
+                .skill-box {
+                    border: 1px solid #000;
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 1.7vw;
+                    align-items: center;
+
+                    .skill-png-wrap {
+                        display: flex;
+                        height: 4vw;
+                        width: 4vw;
+    
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+    
+                    .skill-name {
+                        display: flex;
+
+                        p {
+                            margin: 0;
+                            text-transform: uppercase;
+                            font-size: 1.3vw;
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                            color: #656464;
+                        }
+                    }
+                }
+            }
+
+            .download-cv-wrap {
+                display: flex;
+                
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    .download-cv-btn {
+                        cursor: pointer;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;    
+                        padding: 1vw;
+                        border: none;
+                        border-radius: 2vw;
+                        background-color: DodgerBlue;
+                        color: #fff;
+                        width: 100%;
+                        font-size: 1.3vw;
+                        font-weight: 400;
+                        letter-spacing: 2%;
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+
+                    :hover,
+                    :focus,
+                    :active {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+
+        .skill-img-body {
+            border: 1px solid purple;
+            background-image: url(../../../asserts/images/about-img.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            border-radius: 0 2vw 2vw 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px){
+    .skill-sec {
+        .skill-wrap {
+            grid-template-columns: 100%;
+
+            .skill-content {
+                border-radius: 2vw 2vw 0 0;
+            }
+
+            .skill-img-body {
+                height: 45vw;
+                border-radius: 0 0 2vw 2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .skill-sec {
+        .skill-wrap {
+            grid-template-columns: 100%;
+
+            .skill-content {
+                border-radius: 2vw 2vw 0 0;
+            }
+
+            .skill-img-body {
+                height: 45vw;
+                border-radius: 0 0 2vw 2vw;
+            }
+        }
+    }
+}

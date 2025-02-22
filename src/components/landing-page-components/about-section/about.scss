@@ -1,0 +1,120 @@
+.about-section {
+    border: 1px solid #000;
+    margin: 4vw;
+    display: flex;
+
+    .about-wrap {
+        border: 1px solid yellow;
+        display: flex;
+        border-radius: 2vw;
+        background-color: #f8f8f8;
+        margin: 0 4vw;
+
+        .about-txt-contain {
+            border: 1px solid red;
+            padding: 3vw;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5vw;
+        
+            .about-head {
+                border: 1px solid green;
+                display: flex;
+                flex-direction: row;
+                column-gap: 1.4vw;
+                align-items: center;
+                
+                span {
+                    height: 9.5%;
+                    width: 2%;
+                    background-color: #000;
+                }
+        
+                .head {
+                    display: flex;
+                    
+                    h1 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: 2.5vw;
+                        font-weight: 600;
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                    }
+                }
+            }
+    
+            .about-txt {
+                border: 1px solid #000;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2vw;
+                flex-wrap: wrap;
+    
+                p {
+                    margin: 0;
+                    font-size: 1.3vw;
+                    font-weight: 400;
+                    color: #656464;
+                }
+            }
+
+            .about-btn {
+                border: 1px solid #000;
+                margin: 10px 0 0;
+                display: grid;
+                grid-template-columns: 48% 48%;
+                column-gap: 4%;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    width: 100%;
+                    text-decoration: none;
+
+                    .download-cv-btn {
+                        cursor: pointer;
+                        padding: 1vw;
+                        border: none;
+                        border-radius: 25px;
+                        background-color: DodgerBlue;
+                        color: #fff;
+                        width: 100%;
+                        font-size: 1.3vw;
+                        font-weight: 400;
+                        letter-spacing: 2%;
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+
+                    :hover,
+                    :focus,
+                    :active {
+                        opacity: 100%;
+                    }
+                }
+
+                .hire-me-btn {
+                    cursor: pointer;
+                    padding: 1vw;
+                    border: none;
+                    border-radius: 25px;
+                    background-color: MediumSeaGreen;
+                    color: #fff;
+                    width: 100%;
+                    font-size: 1.3vw;
+                    font-weight: 400;
+                    letter-spacing: 2%;
+                    opacity: 80%;
+                    transition: all 0.8s ease;
+                }
+
+                :hover,
+                :focus,
+                :active {
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}
