@@ -36,7 +36,7 @@
                     h1 {
                         margin: 0;
                         text-transform: uppercase;
-                        font-size: 2.5vw;
+                        font-size: clamp(14px, 2.5vw, 30px);
                         font-weight: 600;
                         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                     }
@@ -52,7 +52,7 @@
     
                 p {
                     margin: 0;
-                    font-size: 1.3vw;
+                    font-size: clamp(10px, 1.3vw, 16px);
                     font-weight: 400;
                     color: #656464;
                 }
@@ -76,11 +76,11 @@
                         cursor: pointer;
                         padding: 1vw;
                         border: none;
-                        border-radius: 25px;
+                        border-radius: 2vw;
                         background-color: DodgerBlue;
                         color: #fff;
                         width: 100%;
-                        font-size: 1.3vw;
+                        font-size: clamp(10px, 1.3vw, 16px);
                         font-weight: 400;
                         letter-spacing: 2%;
                         opacity: 80%;
@@ -98,11 +98,11 @@
                     cursor: pointer;
                     padding: 1vw;
                     border: none;
-                    border-radius: 25px;
+                    border-radius: 2vw;
                     background-color: MediumSeaGreen;
                     color: #fff;
                     width: 100%;
-                    font-size: 1.3vw;
+                    font-size: clamp(10px, 1.5vw, 16px);
                     font-weight: 400;
                     letter-spacing: 2%;
                     opacity: 80%;

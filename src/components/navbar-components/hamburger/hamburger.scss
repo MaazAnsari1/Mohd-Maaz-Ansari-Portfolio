@@ -8,7 +8,7 @@
         border: none;
         display: flex;
         flex-direction: column;
-        gap: 0.7vw;
+        gap: 7px;
         padding: 1vw;
 
         .bar {
@@ -19,11 +19,11 @@
         }
           
         .rotate1 {
-          transform: rotate(45deg) translate(7px, 5px);
+          transform: rotate(45deg) translate(10px, 5px);
         }
         
         .rotate2 {
-          transform: rotate(-45deg) translate(7px, -5px);
+          transform: rotate(-45deg) translate(10px, -5px);
         }
         
         .fade-out {

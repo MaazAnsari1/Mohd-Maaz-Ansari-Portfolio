@@ -9,7 +9,7 @@
         flex-direction: column;
         margin: 0 4vw;
         padding: 3vw;
-        border-radius: 25px;
+        border-radius: 2vw;
         background: radial-gradient(circle, #c08ec344, #c38e8e44, #bec38e44, #c38e8e44);
         
         .edu-wrap {
@@ -31,7 +31,7 @@
         
                 p {
                     margin: 0;
-                    font-size: 1.5vw;
+                    font-size: clamp(10px, 1.5vw, 20px);
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: 1px;
@@ -40,7 +40,7 @@
         
                 h1 {
                     margin: 0;
-                    font-size: 2.5vw;
+                    font-size: clamp(16px, 2.5vw, 30px);
                     font-weight: 600;
                     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                 }
@@ -73,12 +73,9 @@
                         width: 60%;
                         height: 100%;
                         top: 0%;
-
                         transform: skew(45deg);
                         position: absolute;
-
                         transition: left 500ms ease-out;
-
                         left: -125%;
                     }
 
@@ -98,8 +95,8 @@
                             margin: 0;
                             display: flex;
                             flex-wrap: wrap;
-                            height: 5vw;
-                            font-size: 1.7vw;
+                            height: 4.5vw;
+                            font-size: clamp(10px, 1.7vw, 20px);
                             font-weight: 600;
                             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                             text-transform: uppercase;
@@ -107,7 +104,6 @@
                     }
         
                     .college-wrap {
-                        // border: 1px solid blue;
                         display: flex;
                         margin: 1vw 0 0;
     
@@ -118,7 +114,7 @@
                                 margin: 0;
                                 display: flex;
                                 flex-wrap: wrap;
-                                font-size: 1.7vw;
+                                font-size: clamp(10px, 1.7vw, 20px);
                                 font-weight: 400;
                                 font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                                 text-transform: uppercase;
@@ -132,12 +128,11 @@
                     }
         
                     .year-wrap {
-                        // border: 1px solid blueviolet;
                         display: flex;
         
                         p {
                             margin: 0;
-                            font-size: 1.3vw;
+                            font-size: clamp(8px, 1.3vw, 14px);
                             font-weight: 400;
                             font-style: italic;
                             text-transform: uppercase;
@@ -146,14 +141,13 @@
                     }
         
                     .edu-summary-wrap {
-                        // border: 1px solid grey;
                         display: flex;
         
                         p {
                             margin: 0;
                             display: flex;
                             flex-wrap: wrap;
-                            font-size: 1.3vw;
+                            font-size: clamp(8px, 1.3vw, 14px);
                             font-weight: 400;
                             font-style: italic;
                             color: #656464;
@@ -189,7 +183,7 @@
                 .edu-content {
                     display: flex;
                     flex-wrap: wrap;
-                    row-gap: 1.3vw;
+                    row-gap: 3vw;
                 }
             }
         }
