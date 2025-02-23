@@ -24,7 +24,7 @@ function HeroSection() {
                   It's Maaz Ansari, a
                 </p>
                 <span className="writing-profile-txt">
-                  {/* <ProfileTypewriter />  */}
+                  <ProfileTypewriter /> 
                 </span>
               </div>
             </div>

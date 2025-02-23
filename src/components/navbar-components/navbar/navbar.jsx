@@ -33,7 +33,7 @@ function Navbar () {
                     </div>
 
                     <div className="rotating-txt">
-                        {/* <RotatingText /> */}
+                        <RotatingText />
                     </div>
 
                     <div className="hamburger">
