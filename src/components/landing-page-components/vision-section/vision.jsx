@@ -21,7 +21,7 @@ const VisionSection = () => {
                         </div>
 
                         <div className="vision-call-btn">
-                            {/* <RotatingText /> */}
+                            <RotatingText />
                         </div>
                     </div>
                 </div>
