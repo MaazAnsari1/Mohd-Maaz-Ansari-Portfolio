@@ -1,0 +1,30 @@
+{
+    "title": "My Skills",
+    "skills": [
+        {
+            "name": "React JS"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "SCSS"
+        },
+        {
+            "name": "Bootstrap"
+        },
+        {
+            "name": "Material UI"
+        },
+        {
+            "name": "Git"
+        }
+    ],
+    "ResumeButtonName": "Download Resume"
+}

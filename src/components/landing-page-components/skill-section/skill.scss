@@ -53,6 +53,7 @@
 
                 .skill-box {
                     border: 1px solid #000;
+                    cursor: pointer;
                     display: flex;
                     flex-direction: row;
                     column-gap: 1.7vw;
@@ -124,7 +125,7 @@
 
         .skill-img-body {
             border: 1px solid purple;
-            background-image: url(../../../asserts/images/about-img.jpg);
+            background-image: url(../../../asserts/images/about-images/about-img.jpg);
             background-repeat: no-repeat;
             background-position: top center;
             background-size: cover;

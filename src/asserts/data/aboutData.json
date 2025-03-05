@@ -1,0 +1,14 @@
+{
+    "head": {
+        "title": "About Me"
+    },
+    "aboutText": [
+        "Hi, I'm Mohd Maaz Ansari, a Computer Science Engineering graduate with a diploma and currently pursuing my B-Tech in the same stream. I've worked on various projects as a Front-End Developer, and specifically as a Full Stack Web Developer intern on an Online Software Training Provider Institute Website at Codeango Private Limited.",
+        "I thrive in problem-solving, teamwork, and adaptability. Outside of work, I enjoy coding, football, movies, music, and traveling. I'm eager to contribute to innovative projects and collaborate on something extraordinary.",
+        "Let's connect and create together!"
+    ],
+    "buttons": {
+        "downloadResume": "Download Resume",
+        "hireMe": "Hire Me"
+    }
+}

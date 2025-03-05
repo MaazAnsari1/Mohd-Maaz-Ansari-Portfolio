@@ -1,0 +1,22 @@
+{
+    "title": "Service",
+    "description": "Empowering Digital Experiences, Enhancing User Interaction Designs that Inspire, Functionality that Delivers.",
+    "services": [
+        {
+            "name": "Front End Development",
+            "description": "Building responsive, user-friendly web interfaces with modern technologies. Creating interactive and engaging user experiences that function flawlessly."
+        },
+        {
+            "name": "UI/UX Design",
+            "description": "Enhancing user satisfaction through intuitive design and seamless experiences. Creating visually appealing interfaces that engage and inspire."
+        },
+        {
+            "name": "Photography",
+            "description": "Photography captures life's moments, turning them into lasting memories. Through the lens, we reveal the beauty and stories of the world around us."
+        },
+        {
+            "name": "Photo Editing",
+            "description": "Photo editors turn ordinary images into stunning masterpieces, enhancing colors, retouching details, and adding creative effects to reveal unique stories."
+        }
+    ]
+}

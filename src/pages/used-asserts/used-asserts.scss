@@ -1,0 +1,147 @@
+.used-assert-container {
+    border: 1px solid #000;
+    display: flex;
+    margin: 4vw;
+    
+    .used-assert-wrap {
+        border: 1px solid #000;
+        display: flex;
+        margin: 4vw;
+        flex-direction: column;
+        row-gap: 4vw;
+        width: 100%;
+    
+        .used-assert-head {
+            border: 1px solid red;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+    
+            h1 {
+                margin: 0;
+                text-transform: uppercase;
+                font-size: clamp(18px, 2.5vw, 50px);
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                font-weight: 600;
+            }
+        }
+
+        .used-assert-body {
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+
+            .used-image-wrap {
+                border: 1px solid blueviolet;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2vw;
+
+                .used-image-head {
+                    display: flex;
+                    border: 1px solid orange;
+
+                    h3 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: clamp(12px, 1.5vw, 25px);
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                        font-weight: 600;
+                    }
+                }
+
+                .used-image-body {
+                    column-count: 3;
+                    gap: 1.7vw;
+                    border: 1px solid palevioletred;
+
+                    .used-image-item {
+                        border: 1px solid #000;
+                        margin: 1.7vw 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1vw;
+
+                        img {
+                            border: 1px solid blue;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        p {
+                            border: 1px solid blue;
+                            margin: 0;
+                            text-transform: uppercase;
+                            padding: 1vw;
+                            display: flex;
+                            text-align: center;
+                            justify-content: center;
+                            font-size: clamp(8px, 1.3vw, 18px);
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .used-doc-wrap {
+                border: 1px solid blueviolet;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2vw;
+
+                .used-doc-head {
+                    display: flex;
+                    border: 1px solid orange;
+
+                    h3 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: clamp(12px, 1.5vw, 25px);
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                        font-weight: 600;
+                    }
+                }
+
+                .used-doc-body {
+                    display: grid;
+                    grid-template-columns: 49% 49%;
+                    column-gap: 2%;
+                    border: 1px solid palevioletred;
+
+                    .used-doc-item {
+                        border: 1px solid #000;
+                        margin: 1.7vw 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1vw;
+
+                        a {
+                            border: 1px solid blue;
+                            width: 100%;
+                            height: auto;
+                            text-decoration: none;
+                            padding: 1vw 0;
+                            display: flex;
+                            text-align: center;
+                            justify-content: center;
+                            font-size: clamp(8px, 1.3vw, 18px);
+                            font-weight: 400;
+                        }
+
+                        p {
+                            border: 1px solid blue;
+                            margin: 0;
+                            text-transform: uppercase;
+                            padding: 1vw;
+                            display: flex;
+                            text-align: center;
+                            justify-content: center;
+                            font-size: clamp(8px, 1.3vw, 18px);
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

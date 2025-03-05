@@ -1,10 +1,13 @@
 .typewriter-container {
     display: flex;
     align-items: center;
+    margin: 1vw 0 0 2.2vw;
+    height: 1.6vw;
+    font-size: clamp(6px, 2.5vw, 25px);
 
     .typewriter-txt {
         margin: 0;
-        font-size: 1.3vw;
+        font-size: clamp(8px, 2.5vw, 50px);
         font-weight: 200;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }

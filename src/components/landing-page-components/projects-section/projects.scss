@@ -1,0 +1,166 @@
+.project-sec {
+    border: 1px solid #000;
+    margin: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .project-wrap {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vw;
+        margin: 4vw;
+        // align-items: center;
+        // justify-content: center;
+
+        .project-head {
+            border: 1px solid blue;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+
+            h1 {
+                margin: 0;
+                text-transform: uppercase;
+                font-size: clamp(14px, 2.5vw, 30px);
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                font-weight: 600;
+            }
+
+            p {
+                margin: 0;
+                font-size: clamp(10px, 1.3vw, 18px);
+                font-weight: 400;
+                color: #656464;
+            }
+        }
+
+        .project-container {
+            border: 1px solid green;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            border-radius: 2vw;
+
+            .project-screen-container {
+                border: 1px solid purple;
+                display: flex;
+                
+                .project-screen {
+                    border: 1px solid #000;
+                    margin: 2vw 3vw 0 3vw;
+                    border-radius: 1.5vw 1.5vw 0 0;
+                    height: auto;
+                    width: 100%;
+
+                    img {
+                        height: auto;
+                        width: 100%;
+                        border-radius: 1.5vw 1.5vw 0 0;
+                    }
+                }
+            }
+
+            .project-txt-container {
+                border: 1px solid orange;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2vw;
+                justify-content: space-between;
+                margin: 3vw;
+
+                .project-txt-wrap {
+                    border: 1px solid purple;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0.5vw;
+
+                    h1 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: clamp(14px, 2.5vw, 30px);
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                        font-weight: 600;
+                    }
+                    
+                    h2 {
+                        margin: 0;
+                        text-transform: uppercase;
+                        font-size: clamp(10px, 1.5vw, 18px);
+                        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+                        font-weight: 600;
+                    }
+                    
+                    p {
+                        margin: 0;
+                        font-size: clamp(8px, 1.3vw, 14px);
+                        font-weight: 400;
+                        color: #656464;
+                    }
+                }
+
+                .project-btn-wrap {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .project-btn {
+                        display: flex;
+                        column-gap: 0.5vw;
+                        align-items: center;
+                        font-size: clamp(10px, 1.3vw, 18px);
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                            font-size: clamp(10px, 1.3vw, 18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px){
+    .project-sec {
+        .project-wrap {
+            .project-container {
+                display: flex;
+                flex-direction: column;
+
+                .project-screen-container {
+                    height: 50vw;
+                    width: 100%;
+
+                    .project-screen {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .project-sec {
+        .project-wrap {
+            .project-container {
+                display: flex;
+                flex-direction: column;
+
+                .project-screen-container {
+                    height: 50vw;
+                    width: 100%;
+
+                    .project-screen {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

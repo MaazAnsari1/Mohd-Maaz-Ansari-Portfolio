@@ -1,0 +1,15 @@
+{
+    "title": "My Projects",
+    "description": "Transforming Ideas into Reality — Enhancing Every Project with Dedication and Expertise!",
+    "projects": [
+        {
+            "name": "Maaz Ansari Portfolio",
+            "tech": "ReactJS, JavaScript, HTML5, SCSS, GitHub, VS Code",
+            "description": "The main goal was to develop a service to optimize work in the office. Created together with the customer a completely new service on the Indian market to optimize work and service in the office. Helped solve the problem of modern society to save time and use it more organically.",
+            "githubButtonName": "GitHub",
+            "githubLink": "https://github.com/yourgithub/portfolio",
+            "liveButtonName": "Live Visit",
+            "liveLink": "https://yourportfolio.com"
+        }
+    ]
+}

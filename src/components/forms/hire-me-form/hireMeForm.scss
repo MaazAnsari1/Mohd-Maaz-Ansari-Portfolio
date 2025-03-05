@@ -1,0 +1,150 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .modal {
+        position: relative;
+        background: white;
+        padding: 1.7vw;
+        border-radius: 1.3vw;
+        width: 80%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vw;
+
+        .close-modal {
+            border: none;
+            border-radius: 5px;
+            font-size: clamp(14px, 2vw, 25px);
+            position: absolute;
+            top: 1.7vw;
+            right: 1.7vw;
+            cursor: pointer;
+            background-color: red;
+            color: #fff;
+            opacity: 70%;
+            transition: all 0.8s ease;
+        }
+
+        :hover,
+        :focus,
+        :active {
+            opacity: 100%;
+        }
+
+        .modal-head {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            h1 {
+                margin: 0;
+                text-transform: uppercase;
+                font-size: clamp(16px, 2.5vw, 30px);
+                font-weight: 600;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                color: #000;
+            }
+
+            p {
+                margin: 0;
+                font-size: clamp(10px, 2.5vw, 16px);
+                font-weight: 400;
+                color: #656464;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5vw;
+            justify-content: center;
+
+            .field-wrap {
+                position: relative;
+                display: flex;
+                width: 100%;
+                
+                .full-name,
+                .email,
+                .phone-num {
+                    width: 100%;
+                    padding: 1vw;
+                    font-size: clamp(8px, 2.5vw, 14px);
+                    font-weight: 400;
+                }
+
+                .txt-area {
+                    width: 100%;
+                    padding: 1vw;
+                    height: 8vw;
+                    font-size: clamp(8px, 2.5vw, 14px);
+                    font-weight: 400;
+                    overflow-y: scroll;
+                    scroll-behavior: smooth;
+                }
+
+                .error {
+                    position: absolute;
+                    top: 45px;
+                    margin: 0px 10px;
+                    color: red;
+                    font-size: 0.9vw;
+                }
+
+                .hire-me-btn-wrap {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    column-gap: 1.7vw;
+
+                    .reset-btn {
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 2vw;
+                        padding: 1vw;
+                        background-color: #cdcbcb;
+                        color: #fff;
+                        font-size: clamp(10px, 1.3vw, 14px);
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+
+                    .submit-btn {
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 2vw;
+                        padding: 1vw;
+                        background-color: MediumSeaGreen;
+                        color: #fff;
+                        font-size: clamp(10px, 1.3vw, 14px);
+                        opacity: 80%;
+                        transition: all 0.8s ease;
+                    }
+    
+                    :hover,
+                    :focus,
+                    :active {
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

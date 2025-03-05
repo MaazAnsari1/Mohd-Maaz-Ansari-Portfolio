@@ -6,9 +6,9 @@ function ProfileTypewriter() {
 
     useEffect(() => {
         const options = {
-            strings: ["Front End Developer.", "ReactJS Developer.", "JavaScript Developer.", "UI/UX Developer."],
-            typeSpeed: 50,
-            backSpeed: 50,
+            strings: ["A Front End Developer.", "A ReactJS Developer.", "A JavaScript Developer."],
+            typeSpeed: 30,
+            backSpeed: 30,
             loop: true,
             loopCount: Infinity,
             cursorChar: "|"

@@ -1,0 +1,29 @@
+{
+    "sectionTitle": "Education & Experience",
+    "sectionSubtitle": "Mastery through Education and Practice.",
+    "experiences": [
+        {
+            "title": "Full Stack Web Development Intern",
+            "organization": "Codeango Private Limited",
+            "organizationLink": "",
+            "year": "02/2023 - 04/2023",
+            "summary": "Completed a 2-month Full Stack Web Development Internship at Codeango (OPC) Private Limited, Aurangabad. Developed an official website on WIX and another using React.js, HTML, CSS, Express, Node.js, MongoDB, and REST APIs."
+        }
+    ],
+    "education": [
+        {
+            "degree": "B-Tech in Computer Science Engineering",
+            "institution": "Hi-Tech Institute",
+            "institutionLink": "https://www.hitechengg.edu.in/",
+            "year": "2020 - running",
+            "summary": "Currently pursuing a B-Tech in Computer Science Engineering at Hi-Tech Institute of Information & Technology, Aurangabad, deepening my knowledge and technical proficiency. This program is further enhancing my skills and preparing me for future opportunities in the field."
+        },
+        {
+            "degree": "Diploma in Computer Science Engineering",
+            "institution": "Jamia Polytechnic",
+            "institutionLink": "https://www.jamiapolytechnic.org/",
+            "year": "2018 - 2020",
+            "summary": "Earned a Diploma in Computer Science Engineering from Jamia Polytechnic Akkalkuwa. Gained strong technical skills and knowledge, along with problem-solving abilities. Prepared for advanced studies and professional opportunities."
+        }
+    ]
+}

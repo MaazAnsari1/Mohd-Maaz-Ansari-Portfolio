@@ -1,10 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './navbar.scss';
-
-import LandingPage from "../../../pages/landing-page/landingPage";
-import AboutPage from "../../../pages/about-page/about";
-import ProjectPage from "../../../pages/project-page/project";
-import ContactPage from "../../../pages/contact-page/contact";
 
 import Logo from "../../../asserts/logo/logo1.png";
 import Hamburger from "../hamburger/hamburger";
@@ -18,22 +14,22 @@ function Navbar () {
                 <div className="navbar">
                     <div className="nav-content">
                         <div className="logo-wrap">
-                            <a href={LandingPage}>
+                            <Link to="/">
                                 <img src={Logo} alt="Home Page" />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="nav-menu-wrap">
                             <ul>
-                                <li><a href={AboutPage}>About Me</a></li>
-                                <li><a href={ProjectPage}>Projects</a></li>
-                                <li><a href={ContactPage}>Contact</a></li>
+                                <li><Link to="/about">About Me</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/projects">Projects</Link></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="rotating-txt">
-                        <RotatingText />
+                        {/* <RotatingText /> */}
                     </div>
 
                     <div className="hamburger">

@@ -55,8 +55,28 @@
                 row-gap: 1vw;
                 padding: 1.7vw;
                 background-color: #f8f8f8;
+                // background: radial-gradient(circle, #c08ec344, #c38e8e44, #bec38e44, #c38e8e44);
                 box-shadow: 0 4px 15px 0 rgba(107, 107, 107, 0.37);
                 transition: all 0.8s ease;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    background: rgba(#fff, 0.4);
+                    width: 60%;
+                    height: 100%;
+                    top: 0%;
+                    transform: skew(45deg);
+                    position: absolute;
+                    transition: left 500ms ease-out;
+                    left: -125%;
+                }
+
+                &:hover {
+                    &::before {
+                        left: 150%;
+                    }
+                }
 
                 // .service-icon {
                 //     position: absolute;

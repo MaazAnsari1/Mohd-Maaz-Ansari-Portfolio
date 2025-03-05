@@ -14,18 +14,14 @@ const VisionSection = () => {
 
                             <div className="vision-txt-wrap">
                                 <p>
-                                    Thrilled to embark on innovative journeys, 
-                                    from concept to completion! 
-                                </p>
-                                <p>
-                                    Eager to collaborate, 
-                                    whether launching fresh ideas or perfecting existing projects!
+                                    Excited to innovate and collaborate from concept to completion, 
+                                    ready to launch new ideas or refine existing projects! 
                                 </p>
                             </div>
                         </div>
 
                         <div className="vision-call-btn">
-                            <RotatingText />
+                            {/* <RotatingText /> */}
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './hamburger.scss';
-import LandingPage from "../../../pages/landing-page/landingPage";
-import AboutPage from "../../../pages/about-page/about";
-import ProjectPage from "../../../pages/project-page/project";
-import ContactPage from "../../../pages/contact-page/contact";
 
 import RotatingText from "../../rotating-text/rotating-text";
 
@@ -26,10 +23,10 @@ const Hamburger = () => {
                 <div className="menu">
                     <ul>
                         {/* <RotatingText /> */}
-                        <li><a href={LandingPage}>Home</a></li>
-                        <li><a href={AboutPage}>About Me</a></li>
-                        <li><a href={ProjectPage}>Project</a></li>
-                        <li><a href={ContactPage}>Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
                     </ul>
                 </div>
             )}

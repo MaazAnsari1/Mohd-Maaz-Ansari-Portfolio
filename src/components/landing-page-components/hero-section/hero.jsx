@@ -1,38 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./hero.scss";
-
 import { AiOutlineArrowDown } from "react-icons/ai";
 import ProfileTypewriter from "../../profile-typewriter/profile-typewriter";
+import heroData from "../../../asserts/data/heroData.json";
 
 function HeroSection() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    setData(heroData);
+  }, []);
+
+  if (!data) return null;
   return (
     <>
       <section className="hero-section">
         <div className="hero">
           <div className="hz-profile-content">
-            <p className="hz-year-txt">2025</p>
+            <p className="hz-year-txt">{data.year}</p>
             <span></span>
-            <p className="hz-profile-txt">Front End Developer</p>
+            <p className="hz-profile-txt">{data.role}</p>
           </div>
 
           <div className="hero-content">
-            <h1>Hello</h1>
+            <h1>{data.greeting}</h1>
             <div className="hero-txt">
               <span className="hero-profile-vl"></span>
               <div className="profile-txt">
-                <p>
-                  It's Maaz Ansari, a
-                </p>
-                <span className="writing-profile-txt">
-                  <ProfileTypewriter /> 
-                </span>
+                <p>{data.intro}</p>
               </div>
+            </div>
+            <div className="writing-profile-txt">
+              <ProfileTypewriter />
             </div>
           </div>
 
           <div className="scroll-btn-wrap">
-            <a href="#visit-about-section">
-              Scroll Down
+            <a href={data.scrollTarget}>
+              {data.scrollText}
               <div className="scroll-down-arrow">
                 <AiOutlineArrowDown />
               </div>
