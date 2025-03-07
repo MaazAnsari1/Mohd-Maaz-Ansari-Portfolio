@@ -1,58 +1,62 @@
 .hero-section {
     border: 1px solid #000;
-    display: grid;
-    grid-template-columns: 35% 65%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
     margin: 4vw;
     
+    .hz-profile-content {
+        border: 1px solid green;
+        height: 50vw;
+        display: grid;
+        grid-template-columns: 5% 59% 32%;
+        column-gap: 4%;
+        writing-mode: vertical-lr;
+        padding: 0 1.1vw;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(180deg);
+        height: 100%;
+
+        .hz-profile-txt {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0;
+            font-size: clamp(6px, 1.4vw, 18px);
+            font-weight: 200;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            color: #cdcbcb;
+            text-transform: uppercase;
+        }
+        
+        span {
+            width: 1%;
+            height: 100%;
+            background-color: #cdcbcb;
+        }
+
+        .hz-year-txt {
+            margin: 0;
+            font-size: clamp(6px, 1.4vw, 18px);
+            font-weight: 200;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            color: #cdcbcb;
+        }
+    }
+
     .hero {
         border: 1px solid red;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 35% 65%;
         position: relative;
-    
-        .hz-profile-content {
-            border: 1px solid green;
-            height: 50vw;
-            display: grid;
-            grid-template-columns: 5% 59% 32%;
-            column-gap: 4%;
-            writing-mode: vertical-lr;
-            padding: 0 1.1vw;
-            justify-content: center;
-            align-items: center;
-            transform: rotate(180deg);
-    
-            .hz-profile-txt {
-                display: flex;
-                flex-wrap: nowrap;
-                margin: 0;
-                font-size: clamp(4px, 1.4vw, 18px);
-                font-weight: 200;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                color: #cdcbcb;
-            }
-            
-            span {
-                width: 1%;
-                height: 100%;
-                background-color: #cdcbcb;
-            }
-
-            .hz-year-txt {
-                margin: 0;
-                font-size: clamp(4px, 1.4vw, 18px);
-                font-weight: 200;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                color: #cdcbcb;
-            }
-        }
+        width: 100%;
     
         .hero-content {
             border: 1px solid yellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0 0 0 10%;
+            margin: 0 0 0 8%;
     
             h1 {
                 font-size: clamp(50px, 16vw, 250px);
@@ -67,7 +71,7 @@
                 column-gap: 3%;
     
                 .hero-profile-vl {
-                    height: 7%;
+                    height: 2px;
                     width: 3%;
                     background-color: #000;
                 }
@@ -79,8 +83,9 @@
                     align-items: center;
     
                     p {
+                        border: 1px solid #000;
                         margin: 0;
-                        font-size: clamp(8px, 2.5vw, 50px);
+                        font-size: clamp(10px, 2vw, 28px);
                         font-weight: 200;
                         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
                     }
@@ -92,42 +97,62 @@
             }
     
         }
-    
-        .scroll-btn-wrap {
-            border: 1px solid red;
-            position: absolute;
-            bottom: 5%;
-            left: 30%;
-            display: flex;
-            scroll-behavior: smooth;
-    
-            a {
-                cursor: pointer;
-                display: flex;
-                text-decoration: none;
-                font-size: clamp(6px, 1.3vw, 18px);
-                font-weight: 400;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                color: #656464;
-                transition: all 0.8s ease;
-    
-                .scroll-down-arrow {
-                    display: flex;
-                    align-items: center;
-                    margin: 0 0 0 1vw;
-                }
-            }
-    
-            :hover,
-            :focus,
-            :active {
-                color: #000;
-            }
+
+        .profile-image-container {
+            border: 1px solid blue;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%, #fff 100%), url(../../../asserts/images/landing-page-images/profilepic11.png) bottom center / cover no-repeat;
         }
     }
 
-    .profile-image-container {
-        border: 1px solid blue;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%, #fff 100%), url(../../../asserts/images/landing-page-images/profilepic11.png) center / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .hero-section {
+
+        .hz-profile-content {
+            height: 60%;
+        }
+
+        .hero {
+            // display: flex;
+            // flex-direction: column;
+            // row-gap: 5vw;
+
+            .hero-content {
+                margin: 0 0 0 5%;
+            }
+        }
+
+        .profile-image-container {
+            // height: 100%;
+            // width: auto;
+            background-size: contain !important;
+        }
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .hero-section {
+        
+        .hz-profile-content {
+            height: 50%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5vw;
+            
+            .hero-content {
+                margin: 0 0 0 5%;
+            }
+        }
+        
+        .profile-image-container {
+            // height: clamp(100px, 50vw, 500px);
+            height: 100%;
+            width: auto;
+            background-size: contain !important;
+        }
     }
 }

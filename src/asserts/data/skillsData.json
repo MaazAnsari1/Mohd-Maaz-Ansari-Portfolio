@@ -2,29 +2,38 @@
     "title": "My Skills",
     "skills": [
         {
-            "name": "React JS"
+            "name": "React JS",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/react-logo.9bfb834c9a96fdc5d07d.png"
         },
         {
-            "name": "JavaScript"
+            "name": "JavaScript",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png"
         },
         {
-            "name": "HTML"
+            "name": "HTML",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/html5-logo.fb5bbd5c7ff004854c2b.png"
         },
         {
-            "name": "CSS"
+            "name": "CSS",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/css3-logo.4a423644f7126103a647.png"
         },
         {
-            "name": "SCSS"
+            "name": "SCSS",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/scss-sass-logo.c16de2745ebcab9db6b7.png"
         },
         {
-            "name": "Bootstrap"
+            "name": "Bootstrap",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/bootstrap-logo.405119927bae13e99430.png"
         },
         {
-            "name": "Material UI"
+            "name": "Material UI",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/material-ui-logo.d3701888c658cded0cce.png"
         },
         {
-            "name": "Git"
+            "name": "Git",
+            "imageUrl": "https://maaz-ansari-portfolio.netlify.app/static/media/git-logo.614495fab420b846a386.png"
         }
     ],
-    "ResumeButtonName": "Download Resume"
+    "ResumeButtonName": "Download Resume",
+    "ResumePDF": "https://maaz-ansari-portfolio.netlify.app/static/media/Maaz-Ansari-CV.c52728db558c2589e293.pdf"
 }

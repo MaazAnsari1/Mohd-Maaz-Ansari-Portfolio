@@ -6,10 +6,11 @@
             "name": "Maaz Ansari Portfolio",
             "tech": "ReactJS, JavaScript, HTML5, SCSS, GitHub, VS Code",
             "description": "The main goal was to develop a service to optimize work in the office. Created together with the customer a completely new service on the Indian market to optimize work and service in the office. Helped solve the problem of modern society to save time and use it more organically.",
+            "imageURL": "https://maaz-ansari-portfolio.netlify.app/static/media/maaz-ansari-portfolio.68a0e8553e5b259273d2.png",
             "githubButtonName": "GitHub",
-            "githubLink": "https://github.com/yourgithub/portfolio",
+            "githubLink": "https://github.com/MaazAnsari1/Mohd-Maaz-Ansari-Portfolio",
             "liveButtonName": "Live Visit",
-            "liveLink": "https://yourportfolio.com"
+            "liveLink": "https://maaz-ansari-portfolio.netlify.app"
         }
     ]
 }

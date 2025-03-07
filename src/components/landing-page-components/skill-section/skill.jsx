@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./skill.scss";
 import skillsData from "../../../asserts/data/skillsData.json";
-import Resume from "../../../asserts/doc/Maaz-Ansari-CV.pdf";
 
 const SkillSection = () => {
     const [data, setData] = useState(null);
@@ -26,7 +25,7 @@ const SkillSection = () => {
                             {data.skills.map((skill, index) => (
                                 <div className="skill-box" key={index}>
                                     <div className="skill-png-wrap">
-                                        <img src={skill.logo} alt={skill.name} />
+                                        <img src={skill.imageUrl} alt={skill.name} />
                                     </div>
                                     <div className="skill-name">
                                         <p>{skill.name}</p>
@@ -36,7 +35,7 @@ const SkillSection = () => {
                         </div>
 
                         <div className="download-cv-wrap">
-                            <a href={Resume} rel="noopener noreferrer" target="_blank">
+                            <a href={data.ResumePDF} rel="noopener noreferrer" target="_blank">
                                 <button type="button" className="download-cv-btn">{data.ResumeButtonName}</button>
                             </a>
                         </div>

@@ -3,8 +3,6 @@ import "./projects.scss";
 import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
 import projectsData from "../../../asserts/data/projectsData.json";
 
-import MaazAnsariPortfolio from "../../../asserts/images/project-images/maaz-ansari-portfolio.png";
-
 function Projects() {
   const [data, setData] = useState(null);
 
@@ -27,7 +25,7 @@ function Projects() {
             <div className="project-container" key={index}>
               <div className="project-screen-container">
                 <div className="project-screen">
-                    <img src={MaazAnsariPortfolio} alt="Project Img1" />
+                    <img src={project.imageURL} alt="Project Img1" />
                 </div>
               </div>
 

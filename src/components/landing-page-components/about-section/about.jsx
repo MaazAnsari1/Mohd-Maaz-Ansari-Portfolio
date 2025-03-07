@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './about.scss';
 import HireMeForm from '../../forms/hire-me-form/hireMeForm';
 import aboutData from '../../../asserts/data/aboutData.json';
-import Resume from '../../../asserts/doc/Maaz-Ansari-CV.pdf'
 
 function AboutSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,7 +32,7 @@ function AboutSection() {
                                 ))}
                             </div>
                             <div className="about-btn">
-                                <a href={Resume} rel="noopener noreferrer" target="_blank">
+                                <a href={aboutData.resume} rel="noopener noreferrer" target="_blank">
                                     <button type="button" className="download-cv-btn">{aboutData.buttons.downloadResume}</button>
                                 </a>
                                 <button type="button" className="hire-me-btn" onClick={handleOpenModal}>{aboutData.buttons.hireMe}</button>

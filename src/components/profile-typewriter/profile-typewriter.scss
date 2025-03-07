@@ -1,14 +1,27 @@
 .typewriter-container {
+    border: 1px solid #000;
     display: flex;
     align-items: center;
-    margin: 1vw 0 0 2.2vw;
+    margin: 1vw 0 0 1.7vw;
     height: 1.6vw;
-    font-size: clamp(6px, 2.5vw, 25px);
+    font-size: clamp(6px, 2vw, 22px);
 
     .typewriter-txt {
         margin: 0;
-        font-size: clamp(8px, 2.5vw, 50px);
+        font-size: clamp(10px, 2vw, 28px);
         font-weight: 200;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .typewriter-container {
+        // margin: 1vw 0 0 5vw;
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+    .typewriter-container {
+        margin: 1vw 0 0 5vw;
     }
 }
