@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./hero.scss";
 import ProfileTypewriter from "../../profile-typewriter/profile-typewriter";
 import heroData from "../../../asserts/data/heroData.json";
-import ProfileImg from "../../../asserts/images/landing-page-images/profilepic11.png";
 
 function HeroSection() {
   const [data, setData] = useState(null);
