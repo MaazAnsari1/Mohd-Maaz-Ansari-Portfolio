@@ -1,5 +1,4 @@
 .typewriter-container {
-    border: 1px solid #000;
     display: flex;
     align-items: center;
     margin: 1vw 0 0 1.7vw;
@@ -8,15 +7,9 @@
 
     .typewriter-txt {
         margin: 0;
-        font-size: clamp(10px, 2vw, 28px);
+        font-size: clamp(10px, 2vw, 30px);
         font-weight: 200;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width: 480px){
-    .typewriter-container {
-        // margin: 1vw 0 0 5vw;
     }
 }
 
