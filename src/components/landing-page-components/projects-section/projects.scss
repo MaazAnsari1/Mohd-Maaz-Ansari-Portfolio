@@ -1,21 +1,16 @@
 .project-sec {
-    border: 1px solid #000;
-    margin: 4vw;
+    margin: 50px 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .project-wrap {
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         row-gap: 4vw;
         margin: 4vw;
-        // align-items: center;
-        // justify-content: center;
 
         .project-head {
-            border: 1px solid blue;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -38,22 +33,18 @@
         }
 
         .project-container {
-            border: 1px solid green;
+            background-color: #13274F;
             display: grid;
             grid-template-columns: 50% 50%;
             border-radius: 2vw;
 
             .project-screen-container {
-                border: 1px solid purple;
                 display: flex;
                 
                 .project-screen {
-                    border: 1px solid #000;
-                    margin: 2vw 3vw 0 3vw;
+                    padding: 3vw 3vw 0 3vw;
                     border-radius: 1.5vw 1.5vw 0 0;
-                    height: auto;
-                    width: 100%;
-
+                    
                     img {
                         height: auto;
                         width: 100%;
@@ -63,15 +54,13 @@
             }
 
             .project-txt-container {
-                border: 1px solid orange;
                 display: flex;
                 flex-direction: column;
                 row-gap: 2vw;
                 justify-content: space-between;
-                margin: 3vw;
+                margin: 3vw 3vw 3vw 0;
 
                 .project-txt-wrap {
-                    border: 1px solid purple;
                     display: flex;
                     flex-direction: column;
                     row-gap: 0.5vw;
@@ -82,6 +71,7 @@
                         font-size: clamp(14px, 2.5vw, 30px);
                         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
                         font-weight: 600;
+                        color: #fff;
                     }
                     
                     h2 {
@@ -90,13 +80,14 @@
                         font-size: clamp(10px, 1.5vw, 18px);
                         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
                         font-weight: 600;
+                        color: #fff;
                     }
                     
                     p {
                         margin: 0;
                         font-size: clamp(8px, 1.3vw, 14px);
                         font-weight: 400;
-                        color: #656464;
+                        color: #cdcbcb;
                     }
                 }
 
@@ -110,10 +101,11 @@
                         column-gap: 0.5vw;
                         align-items: center;
                         font-size: clamp(10px, 1.3vw, 18px);
+                        color: #fff;
 
                         a {
                             text-decoration: none;
-                            color: #000;
+                            color: #fff;
                             font-size: clamp(10px, 1.3vw, 18px);
                         }
                     }

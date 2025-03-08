@@ -15,6 +15,8 @@ const SkillSection = () => {
         <section>
             <div className="skill-sec">
                 <div className="skill-wrap">
+                    <div className="skill-img-body"></div>
+
                     <div className="skill-content">
                         <div className="skill-head">
                             <span></span>
@@ -41,7 +43,6 @@ const SkillSection = () => {
                         </div>
                     </div>
 
-                    <div className="skill-img-body"></div>
                 </div>
             </div>
         </section>

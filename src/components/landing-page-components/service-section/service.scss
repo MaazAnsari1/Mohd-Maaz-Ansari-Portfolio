@@ -1,10 +1,8 @@
 .service-sec {
-    border: 1px solid #000;
-    margin: 4vw;
+    margin: 50px 4vw;
     display: flex;
 
     .service-wrap {
-        border: 1px solid red;
         margin: 0 4vw;
         padding: 3vw;
         display: flex;
@@ -15,7 +13,6 @@
         justify-content: center;
 
         .service-head {
-            border: 1px solid red;
             display: flex;
             flex-direction: column;
             row-gap: 1vw;
@@ -39,14 +36,12 @@
         }
 
         .service-content {
-            border: 1px solid orange;
             display: grid;
-            grid-template-columns: 32% 32% 32%;
+            grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
             column-gap: 2%;
             row-gap: 1.7vw;
 
             .service-body {
-                border: 1px solid #000;
                 cursor: pointer;
                 position: relative;
                 border-radius: 1.3vw;
@@ -55,7 +50,6 @@
                 row-gap: 1vw;
                 padding: 1.7vw;
                 background-color: #f8f8f8;
-                // background: radial-gradient(circle, #c08ec344, #c38e8e44, #bec38e44, #c38e8e44);
                 box-shadow: 0 4px 15px 0 rgba(107, 107, 107, 0.37);
                 transition: all 0.8s ease;
                 overflow: hidden;
@@ -77,30 +71,6 @@
                         left: 150%;
                     }
                 }
-
-                // .service-icon {
-                //     position: absolute;
-                //     height: 70px;
-                //     width: 70px;
-                //     // top: -60px;
-                //     // left: 8%;
-                //     top: -50%;
-                //     left: 50%;
-                //     transform: translate(-50%, 50%);
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                //     background-color: #f8f8f8;
-                //     padding: 15px;
-                //     border: 1px solid #000;
-                //     border-radius: 50%;
-                //     box-shadow: 0 0px 0px 10px #fff;
-
-                //     img {
-                //         height: 60px;
-                //         width: 60px;
-                //     }
-                // }
 
                 h3 {
                     margin: 0;
@@ -125,12 +95,12 @@
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 480px){
+@media screen and (max-width: 768px) and (min-width: 480px){
     .service-sec {
         .service-wrap {
             .service-content {
-                grid-template-columns: 48% 48%;
-                column-gap: 4%;
+                grid-template-columns: 32% 32% 32%;
+                column-gap: 2%;
                 row-gap: 3vw;
             }
         }
@@ -141,8 +111,8 @@
     .service-sec {
         .service-wrap {
             .service-content {
-                display: flex;
-                flex-wrap: wrap;
+                grid-template-columns: 48% 48%;
+                column-gap: 4%;
                 row-gap: 3vw;
             }
         }

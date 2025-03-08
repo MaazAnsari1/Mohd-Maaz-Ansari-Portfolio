@@ -1,24 +1,20 @@
 .about-section {
-    border: 1px solid #000;
-    margin: 4vw;
+    margin: 10vw 4vw 50px;
     display: flex;
 
     .about-wrap {
-        border: 1px solid yellow;
         display: flex;
         border-radius: 2vw;
         background-color: #f8f8f8;
         margin: 0 4vw;
 
         .about-txt-contain {
-            border: 1px solid red;
             padding: 3vw;
             display: flex;
             flex-direction: column;
             row-gap: 1.5vw;
         
             .about-head {
-                border: 1px solid green;
                 display: flex;
                 flex-direction: row;
                 column-gap: 1.4vw;
@@ -44,7 +40,6 @@
             }
     
             .about-txt {
-                border: 1px solid #000;
                 display: flex;
                 flex-direction: column;
                 row-gap: 1.7vw;
@@ -59,7 +54,6 @@
             }
 
             .about-btn {
-                border: 1px solid #000;
                 margin: 10px 0 0;
                 display: grid;
                 grid-template-columns: 48% 48%;

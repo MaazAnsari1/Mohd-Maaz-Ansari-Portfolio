@@ -1,10 +1,8 @@
 .edu-exp-sec {
-    border: 1px solid #000;
     display: flex;
-    margin: 4vw;
+    margin: 50px 4vw 50px;
     
     .edu-exp-wrap {
-        border: 1px solid green;
         display: flex;
         flex-direction: column;
         margin: 0 4vw;
@@ -13,14 +11,12 @@
         background: radial-gradient(circle, #c08ec344, #c38e8e44, #bec38e44, #c38e8e44);
         
         .edu-wrap {
-            border: 1px solid #000;
             display: flex;
             flex-direction: column;
             row-gap: 4vw;
             justify-content: center;
         
             .edu-head-wrap {
-                border: 1px solid red;
                 display: flex;
                 flex-direction: column;
                 row-gap: 1vw;
@@ -47,7 +43,6 @@
             }
         
             .edu-content {
-                border: 1px solid red;
                 cursor: pointer;
                 display: grid;
                 grid-template-columns: 32% 32% 32%;

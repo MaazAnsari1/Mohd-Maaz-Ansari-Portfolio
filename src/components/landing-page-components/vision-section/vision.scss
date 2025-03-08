@@ -1,20 +1,17 @@
 .vision-wrap {
-    border: 1px solid #000;
-    margin: 4vw;
+    margin: 6vw 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .vision-body {
         margin: 0 4vw;
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         row-gap: 4vw;
         align-items: center;
 
         .vision-slogan {
-            border: 1px solid green;
             display: flex;
             flex-direction: column;
             row-gap: 1vw;
@@ -30,7 +27,6 @@
             }
 
             .vision-txt-wrap {
-                border: 1px solid blue;
                 display: flex;
                 flex-direction: column;
                 row-gap: 1px;
@@ -45,10 +41,6 @@
                     color: #656464;
                 }
             }
-        }
-
-        .vision-call-btn {
-            border: 1px solid red;
         }
     }
 }
