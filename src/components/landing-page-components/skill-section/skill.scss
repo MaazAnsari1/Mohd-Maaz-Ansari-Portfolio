@@ -1,11 +1,9 @@
 .skill-sec {
-    border: 1px solid #000;
     margin: 50px 4vw;
     display: flex;
     justify-content: end;
 
     .skill-wrap {
-        border: 1px solid green;
         margin: 0 4vw;
         position: relative;
         display: flex;
@@ -15,7 +13,6 @@
         background-color: #fbcfb174;
 
         .skill-img-body {
-            border: 1px solid blue;
             position: absolute;
             background-image: url(../../../asserts/images/about-images/about-img.jpg);
             background-repeat: no-repeat;
@@ -30,7 +27,6 @@
         }
 
         .skill-content {
-            border: 1px solid red;
             display: flex;
             flex-direction: column;
             row-gap: 2.5vw;
@@ -39,7 +35,6 @@
             width: 59%;
             
             .skill-head {
-                border: 1px solid #000;
                 display: flex;
                 flex-direction: row;
                 column-gap: 1.3vw;
@@ -61,7 +56,6 @@
             }
             
             .skill-body {
-                border: 1px solid #000;
                 display: grid;
                 grid-template-columns: 48% 48%;
                 column-gap: 4%;
@@ -69,7 +63,6 @@
                 
 
                 .skill-box {
-                    border: 1px solid red;
                     cursor: pointer;
                     display: flex;
                     flex-direction: row;
@@ -103,7 +96,6 @@
             }
 
             .download-cv-wrap {
-                border: 1px solid red;
                 display: flex;
                 
                 a {
